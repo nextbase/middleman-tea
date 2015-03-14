@@ -1,4 +1,4 @@
-# Middleman Tea
+# ![logo](https://raw.githubusercontent.com/nextbase/middleman-tea/master/middleman_tea.png)
 
 Welcome to Middleman Tea – a minimal static blog generator for developers.
 
