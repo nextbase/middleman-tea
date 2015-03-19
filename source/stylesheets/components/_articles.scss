@@ -8,25 +8,23 @@
     border-bottom: #EBF2F6 1px solid;
     word-break: break-word;
     hyphens: auto;
-}
 
-/* Add a little circle in the middle of the border-bottom on our .post
-   just for the lolz and stylepoints. */
-.post:after {
-    display: block;
-    content: "";
-    width: 7px;
-    height: 7px;
-    border: #E7EEF2 1px solid;
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    margin-left: -5px;
-    background: #FFF;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    border-radius: 100%;
-    box-shadow: #FFF 0 0 0 5px;
+    &:after {
+        display: block;
+        content: "";
+        width: 7px;
+        height: 7px;
+        border: #E7EEF2 1px solid;
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        margin-left: -5px;
+        background: #FFF;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        border-radius: 100%;
+        box-shadow: #FFF 0 0 0 5px;
+    }
 }
 
 body:not(.post-template) .post-title {
@@ -64,13 +62,15 @@ body:not(.post-template) .post-title {
     border-radius: 100%;
 }
 
-.post-meta a {
-    color: #9EABB3;
-    text-decoration: none;
-}
+.post-meta {
+    a {
+        color: #9EABB3;
+        text-decoration: none;
 
-.post-meta a:hover {
-    text-decoration: underline;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
 
 .user-meta {
@@ -179,33 +179,35 @@ body:not(.post-template) .post-title {
 .extra-pagination {
     display: none;
     border-bottom: #EBF2F6 1px solid;
-}
-.extra-pagination:after {
-    display: block;
-    content: "";
-    width: 7px;
-    height: 7px;
-    border: #E7EEF2 1px solid;
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    margin-left: -5px;
-    background: #FFF;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    border-radius: 100%;
-    box-shadow: #FFF 0 0 0 5px;
-}
-.extra-pagination .pagination {
-    width: auto;
+
+    &:after {
+        display: block;
+        content: "";
+        width: 7px;
+        height: 7px;
+        border: #E7EEF2 1px solid;
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        margin-left: -5px;
+        background: #FFF;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        border-radius: 100%;
+        box-shadow: #FFF 0 0 0 5px;
+    }
+
+    .pagination {
+        width: auto;
+    }
 }
 
-/* On page2+ make all the headers smaller */
-.archive-template .main-header {
-    max-height: 30%;
-}
+.archive-template {
+    .main-header {
+        max-height: 30%;
+    }
 
-/* On page2+ show extra pagination controls at the top of post list */
-.archive-template .extra-pagination {
-    display: block;
+    .extra-pagination {
+        display: block;
+    }
 }
